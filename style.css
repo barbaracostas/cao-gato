@@ -392,162 +392,57 @@ body{
     color: #fff;
 }
 
-/* Telas até 600px */
-@media (max-width: 600px) {
-    .inicio__conteudo {
-        padding: 8% 10%;
+@media (max-width: 768px) {
+    
+    .cabecalho {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
     }
-
+    
+    .cabecalho__menu {
+        margin-left: 0;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    
+    .inicio__conteudo {
+        padding: 10% 5%;
+        text-align: center;
+    }
+    
     .inicio__conteudo__titulo {
         font-size: 28px;
     }
-
-    .inicio__conteudo__paragrafo {
-        font-size: 1.1rem;
-        padding: 10px 0;
+    
+    .inicio__links {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+    
+    .inicio__links__um, .inicio__links__dois {
+        display: block;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        margin: 10px 0;
     }
 
-    .servicos__conteudo,
-    .tratamentos__cards,
+    .inicio__conteudo__img__um{
+        display: none;
+    }
+    
+
+    .servicos__conteudo, 
+    .tratamentos__cards, 
     .veterinarios__cards {
         flex-direction: column;
         align-items: center;
     }
 
-    .servicos__video {
-        width: 100%;
-    }
-
-    .tratamentos__cards__card,
-    .veterinarios__cards__card {
-        width: 100%;
-        max-width: 300px;
-    }
-
     .contato {
         flex-direction: column;
-        padding: 5% 2%;
-    }
-
-    .contato__formulario {
-        width: 100%;
-        max-width: 100%;
-    }
-
-    .contato__imagens {
-        margin-top: 20px;
+        align-items: center;
     }
 }
-
-/* Telas de 601px a 900px */
-@media (min-width: 601px) and (max-width: 900px) {
-    .inicio__conteudo {
-        padding: 8% 15%;
-    }
-
-    .inicio__conteudo__titulo {
-        font-size: 36px;
-    }
-
-    .servicos__conteudo,
-    .tratamentos__cards,
-    .veterinarios__cards {
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: center;
-    }
-
-    .servicos__textos,
-    .tratamentos__cards__card,
-    .veterinarios__cards__card {
-        width: 45%;
-        max-width: 45%;
-    }
-
-    .contato {
-        flex-direction: row;
-        align-items: flex-start;
-    }
-
-    .contato__formulario {
-        width: 60%;
-    }
-
-    .contato__imagens {
-        width: 35%;
-    }
-}
-
-/* Telas de 901px a 1200px */
-@media (min-width: 901px) and (max-width: 1200px) {
-    .inicio__conteudo {
-        padding: 8% 20%;
-    }
-
-    .inicio__conteudo__titulo {
-        font-size: 42px;
-    }
-
-    .servicos__conteudo,
-    .tratamentos__cards,
-    .veterinarios__cards {
-        flex-wrap: nowrap;
-    }
-
-    .servicos__textos,
-    .tratamentos__cards__card,
-    .veterinarios__cards__card {
-        width: 30%;
-        max-width: 30%;
-    }
-
-    .contato {
-        padding: 7% 5%;
-    }
-
-    .contato__formulario {
-        width: 70%;
-    }
-
-    .contato__imagens {
-        width: 25%;
-    }
-}
-
-/* Telas acima de 1200px */
-@media (min-width: 1201px) {
-    .inicio__conteudo {
-        padding: 8% 25%;
-    }
-
-    .inicio__conteudo__titulo {
-        font-size: 48px;
-    }
-
-    .servicos__conteudo,
-    .tratamentos__cards,
-    .veterinarios__cards {
-        max-width: 1200px;
-        margin: 0 auto;
-    }
-
-    .servicos__textos,
-    .tratamentos__cards__card,
-    .veterinarios__cards__card {
-        width: 25%;
-        max-width: 25%;
-    }
-
-    .contato {
-        padding: 9% 10%;
-    }
-
-    .contato__formulario {
-        width: 80%;
-    }
-
-    .contato__imagens {
-        width: 20%;
-    }
-}
-

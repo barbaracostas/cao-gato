@@ -1,0 +1,553 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --cor-cinza-escuro: #313131;
+    --cor-amarelo: #ffc800;
+    --cor-cinza-medio: #333;
+    --cor-preto: #000;
+    --cor-branco: #fff;
+    --cor-paragrafo-card: #dddddd;
+    --font-size-paragrafo-section: 1.3rem;
+}
+
+body{
+    font-family: Arial, sans-serif;
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+.cabecalho{
+    background-color: var(--cor-cinza-escuro);
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+    
+}
+
+.cabecalho__logo{
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+}
+
+.cabecalho__titulo{
+    font-size: 20px;
+    color: var(--cor-amarelo);
+    font-weight: bold;
+    
+}
+
+.cabecalho__menu{
+    display: flex;
+    gap: 10px;
+    margin-left: auto;
+}
+
+.cabecalho__menu__link{
+    text-decoration: none;
+    color: var(--cor-branco);
+}
+
+.cabecalho__menu__link:hover{
+    color: var(--cor-amarelo);
+}
+
+.inicio__conteudo{
+    background-color: var(--cor-amarelo);
+    color: var(--cor-branco);
+    text-align: center;
+    padding: 8% 25% 10% 25%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.inicio__conteudo__texto{
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    
+}
+
+.inicio__conteudo__titulo{
+    font-size: 48px;
+    
+}
+
+.inicio__conteudo__paragrafo{
+    font-size: var(--font-size-paragrafo-section);
+    padding: 20px 35px 15px 45px;
+}
+
+.inicio__links__um {
+    display: inline-block;
+    gap: 10px;
+    text-align: center;
+    padding: 10px 20px;
+    background-color: #00c4ce;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    size: 18px;
+}
+
+.inicio__links__um:hover {
+    background-color: #006b7d;
+}
+
+.inicio__links__dois {
+    text-align: center;
+    padding: 10px 20px;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    border: 2px solid var(--cor-branco);
+    size: 18px;
+}
+
+.inicio__links__dois:hover {
+    background-color: var(--cor-branco);
+    color: #333;
+}
+
+.inicio__conteudo__img__um{
+    width: 500%;
+}
+.servicos {
+    background-color: var(--cor-branco);
+    color: var(--cor-cinza-medio);
+    padding: 7rem;
+}
+
+.servicos__conteudo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 70px;
+    
+}
+.servicos__video {
+    width: 100%;
+    max-width: 700px;
+    height: auto;
+    border-radius: 10px;
+
+}
+.servicos__titulo{
+    font-size: 24px;
+    
+}
+
+.servicos__texto{
+    font-size: 18px;
+    max-width: 300px; 
+    padding: 10px 0px 10px 0px;
+}
+
+.servicos__link {
+    display: inline-block;
+    gap: 10px;
+    text-align: center;
+    padding: 10px 20px;
+    background-color: var(--cor-amarelo);
+    color: var(--cor-cinza-medio);
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    size: 18px;
+}
+
+.servicos__link:hover {
+    background-color: var(--cor-cinza-medio);
+    color: var(--cor-amarelo);
+}
+
+.tratamentos {
+    padding: 7rem 7rem 7rem 7rem;
+    text-align: center;
+    background-color: var(--cor-amarelo);
+    
+}
+
+.tratamentos__titulo {
+    font-size: 28px;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.tratamentos__texto {
+    font-size: 16px;
+    margin-bottom: 30px;
+    padding: 7px;
+}
+
+.tratamentos__cards {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.tratamentos__cards__card {
+    background-color: var(--cor-cinza-escuro);
+    text-align: center;
+    align-items: center;
+    width: 220px; 
+    border-radius: 10px;
+    box-shadow: 0 4px 8px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+.tratamentos__cards__card__img {
+    width: 100%;
+    height: 150px; 
+    object-fit: cover;
+}
+
+.tratamentos__cards__card__titulo {
+    font-size: 1.5rem;
+    color: var(--cor-branco);
+    padding: 10px;
+    text-align: center;
+    line-height: 1.5;
+}
+
+.tratamentos__cards__card__texto {
+    font-size: 16px;
+    color: var(--cor-paragrafo-card);
+    padding-bottom: 20px;
+    text-align: center;
+    font-size: 16px;
+    font-weight: lighter;
+}
+
+.tratamentos__cards__card:hover {
+    transform: translateY(-20px);
+}
+
+.veterinarios {
+    padding: 7rem 7rem 7rem 7rem;
+    text-align: center;
+    background-color: var(--cor-branco);
+}
+
+.veterinarios__titulo {
+    font-size: 28px;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.veterinarios__texto {
+    font-size: 16px;
+    margin-bottom: 30px;
+    padding: 7px;
+    font-weight: bold;
+}
+
+.veterinarios__cards {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.veterinarios__cards__card {
+    background-color: var(--cor-branco);
+    text-align: center;
+    align-items: center;
+    width: 250px; 
+    border-radius: 10px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+.veterinarios__cards__card__img {
+    width: 100%;
+    height: 200%; 
+    object-fit: cover;
+    border-radius: 10px;
+}
+.veterinarios__cards__card__titulo {
+    font-size: 1.2rem;
+    color: var(--cor-preto);
+    padding: 10px;
+    text-align: center;
+}
+
+.veterinarios__cards__card__texto {
+    font-size: 16px;
+    color: var(--cor-cinza-medio);
+    padding-bottom: 10px;
+    text-align: center;
+    font-size: 16px;
+    font-weight: lighter;
+}
+
+.veterinarios__redes__sociais {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.veterinarios__redes__sociais__img {
+    width: 24px;
+    height: 24px;
+}
+
+.contato {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    padding: 9% 2% 9% 2%; 
+    background-color: var(--cor-amarelo);
+}
+
+.contato__formulario {
+    flex: 3; 
+    max-width: 900px; 
+    width: 100%; 
+    background-color: var(--cor-cinza-escuro);
+    padding: 30px; 
+    border-radius: 10px;
+    box-shadow: 0 4px 8px;
+}
+
+.contato__formulario h2 {
+    font-size: 26px; 
+    margin-bottom: 20px;
+    color: var(--cor-branco);
+}
+
+.contato__formulario input, .contato__formulario textarea {
+    width: 100%; 
+    padding: 12px; 
+    margin-bottom: 15px;
+    border: 1px solid var(--cor-branco);
+    background-color: #444;
+    border-radius: 5px;
+    color: var(--cor-branco);
+    font-size: 16px;
+    transition: border-color 0.3s ease-in-out;
+    outline: none; 
+} 
+
+.contato__formulario input:hover, .contato__formulario textarea:hover {
+    border-color: var(--cor-amarelo); 
+    outline: none; 
+}
+.contato__formulario button {
+    width: 100%; 
+    padding: 12px; 
+    margin-bottom: 15px;
+    border: 2px solid var(--cor-branco);
+    border-radius: 5px;
+}
+
+.contato__formulario textarea {
+    resize: none; 
+    height: 120px; 
+    font-family: Arial, sans-serif;
+}
+
+.contato__formulario button {
+    background-color: var(--cor-amarelo);
+    color: var(--cor-preto);
+    border: none;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.contato__formulario button:hover {
+    background-color: #ffc800d5;
+}
+
+.contato__imagens {
+    display: flex;
+    justify-content: center;
+    flex: 1; 
+    max-width: 300px;
+}
+
+.contato__imagens img {
+    width: 100%;
+    max-width: 180px; 
+    height: auto;
+    border-radius: 10px;
+}
+
+.rodape {
+    text-align: center;
+    padding: 20px;
+    background-color: #333;
+    color: #fff;
+}
+
+/* Telas até 600px */
+@media (max-width: 600px) {
+    .inicio__conteudo {
+        padding: 8% 10%;
+    }
+
+    .inicio__conteudo__titulo {
+        font-size: 28px;
+    }
+
+    .inicio__conteudo__paragrafo {
+        font-size: 1.1rem;
+        padding: 10px 0;
+    }
+
+    .servicos__conteudo,
+    .tratamentos__cards,
+    .veterinarios__cards {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .servicos__video {
+        width: 100%;
+    }
+
+    .tratamentos__cards__card,
+    .veterinarios__cards__card {
+        width: 100%;
+        max-width: 300px;
+    }
+
+    .contato {
+        flex-direction: column;
+        padding: 5% 2%;
+    }
+
+    .contato__formulario {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .contato__imagens {
+        margin-top: 20px;
+    }
+}
+
+/* Telas de 601px a 900px */
+@media (min-width: 601px) and (max-width: 900px) {
+    .inicio__conteudo {
+        padding: 8% 15%;
+    }
+
+    .inicio__conteudo__titulo {
+        font-size: 36px;
+    }
+
+    .servicos__conteudo,
+    .tratamentos__cards,
+    .veterinarios__cards {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .servicos__textos,
+    .tratamentos__cards__card,
+    .veterinarios__cards__card {
+        width: 45%;
+        max-width: 45%;
+    }
+
+    .contato {
+        flex-direction: row;
+        align-items: flex-start;
+    }
+
+    .contato__formulario {
+        width: 60%;
+    }
+
+    .contato__imagens {
+        width: 35%;
+    }
+}
+
+/* Telas de 901px a 1200px */
+@media (min-width: 901px) and (max-width: 1200px) {
+    .inicio__conteudo {
+        padding: 8% 20%;
+    }
+
+    .inicio__conteudo__titulo {
+        font-size: 42px;
+    }
+
+    .servicos__conteudo,
+    .tratamentos__cards,
+    .veterinarios__cards {
+        flex-wrap: nowrap;
+    }
+
+    .servicos__textos,
+    .tratamentos__cards__card,
+    .veterinarios__cards__card {
+        width: 30%;
+        max-width: 30%;
+    }
+
+    .contato {
+        padding: 7% 5%;
+    }
+
+    .contato__formulario {
+        width: 70%;
+    }
+
+    .contato__imagens {
+        width: 25%;
+    }
+}
+
+/* Telas acima de 1200px */
+@media (min-width: 1201px) {
+    .inicio__conteudo {
+        padding: 8% 25%;
+    }
+
+    .inicio__conteudo__titulo {
+        font-size: 48px;
+    }
+
+    .servicos__conteudo,
+    .tratamentos__cards,
+    .veterinarios__cards {
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+
+    .servicos__textos,
+    .tratamentos__cards__card,
+    .veterinarios__cards__card {
+        width: 25%;
+        max-width: 25%;
+    }
+
+    .contato {
+        padding: 9% 10%;
+    }
+
+    .contato__formulario {
+        width: 80%;
+    }
+
+    .contato__imagens {
+        width: 20%;
+    }
+}
+
